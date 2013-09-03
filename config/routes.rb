@@ -1,6 +1,7 @@
 ExSocProject::Application.routes.draw do
   get "static_pages/welcome"
   resources :trips
+  resources :individual
   root "static_pages#welcome"
   
 
