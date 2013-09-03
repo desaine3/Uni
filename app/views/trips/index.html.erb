@@ -1,6 +1,7 @@
 
 <div class="jumbotron">
   <h2>Expedition Trips 2013 ! </h2>
+  <p>Trips Still to happen = RED <br> Accomplished Trips = GREEN</p>
   <div class="container">
 
 <% @trips.each_with_index do |trip, counter| %>
@@ -10,7 +11,11 @@
      
  <% end %>
    <div class="col-sm-4 col-md-4">
-        <div class="thumbnail">
+    <% if trip.accomplished == true %>
+        <div class="thumbnail" id="yes">
+    <% elsif trip.accomplished == false %>
+        <div class="thumbnail" id = "no">
+    <%end%>
           <%=  image_tag  trip.picture_url  %>
             <div class="caption">
               <h4><b><%= trip.county + " - " + trip.location %></b></h4>
