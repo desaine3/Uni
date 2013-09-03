@@ -3,6 +3,7 @@
 <table class = "table-striped">
   <thead>
     <tr>
+      <th></th>
       <th>Leaders</th>
       <th>County</th>
       <th>Location</th>
@@ -20,6 +21,7 @@
   <tbody>
     <% @trips.each do |trip| %>
       <tr>
+        <td><% trip.picture %></td>
         <td><%= trip.leaders %></td>
         <td><%= trip.county %></td>
         <td><%= trip.location %></td>

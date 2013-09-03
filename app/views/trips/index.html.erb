@@ -1,10 +1,33 @@
-<div class="landing">
 
-</div>
+<div class="jumbotron">
+  <h2>Trips</h2>
+  <div class="container">
 
-<div class="lanfloat">
-  <h6>Welcome to Expedition Society</h6>
-  <div class = "enter_site">
-   <p><a href="tri" class="btn btn-primary">Enter</a></p>
+<% @trips.each_with_index do |trip, counter| %>
+
+ <% if counter%3 == 0 %>
+    <div class="row">
+     
+ <% end %>
+   <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img  data-src="..." alt=<%= trip.location %>>
+    </a>
+            <div class="caption">
+              <h4><b><%= trip.location %></b></h4>
+               <h5> <b><%= trip.leaders %> <br> From: <%= trip.start_date %> To:  <%= trip.end_date %></b> </h5>
+                <p><%= trip.description %></p>
+                <p><a href="#" class="btn btn-primary">View More</a></p>
+          </div> <!-- caption -->
+        </div> <!-- thumbnail -->
+      </div><!-- column -->
+
+   <% if counter%3 == 2 %>
+    </div><!-- row -->
+     
+ <% end %>
+ 
+  <% end %>
   </div>
-    </div>
+</div>
+ 

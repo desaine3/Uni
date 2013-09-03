@@ -1,5 +1,8 @@
 ExSocProject::Application.routes.draw do
+  get "static_pages/welcome"
   resources :trips
+  root "static_pages#welcome"
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
