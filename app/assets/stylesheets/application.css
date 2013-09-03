@@ -27,11 +27,12 @@
 
 .row {
     padding:10px;
+    height:100%;
 }
 
 .thumbnail{
 background-color:;
-height:300px;
+height:100%;
 }
 
 .btn btn-primary{

@@ -1,6 +1,6 @@
 
 <div class="jumbotron">
-  <h2>Trips</h2>
+  <h2>Expedition Trips 2013 ! </h2>
   <div class="container">
 
 <% @trips.each_with_index do |trip, counter| %>
@@ -11,13 +11,12 @@
  <% end %>
    <div class="col-sm-4 col-md-4">
         <div class="thumbnail">
-          <img  data-src="..." alt=<%= trip.location %>>
-    </a>
+          <%=  image_tag  trip.picture_url  %>
             <div class="caption">
-              <h4><b><%= trip.location %></b></h4>
+              <h4><b><%= trip.county + " - " + trip.location %></b></h4>
                <h5> <b><%= trip.leaders %> <br> From: <%= trip.start_date %> To:  <%= trip.end_date %></b> </h5>
-                <p><%= trip.description %></p>
-                <p><a  class="btn btn-primary"> <%= link_to 'View More', individual_path %></a></p>
+                <p><%= link_to 'Edit', edit_trip_path(trip) %></p>
+                <p class="btn btn-primary"> <%= link_to 'View More', trips_path %> </p>
           </div> <!-- caption -->
         </div> <!-- thumbnail -->
       </div><!-- column -->

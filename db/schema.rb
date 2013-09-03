@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130820185303) do
+ActiveRecord::Schema.define(version: 20130903131856) do
 
   create_table "trips", force: true do |t|
     t.string   "leaders"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20130820185303) do
     t.boolean  "accomplished"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "picture_url"
   end
 
 end
