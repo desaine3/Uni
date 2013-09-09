@@ -3,5 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .landing{
-background: image_url('exsoc.jpg');
+ width:100%;
+margin-top: -20px;
+  height: 600px;
+  background: image_url('exsoc.jpg');
+  background-repeat: no-repeat no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
