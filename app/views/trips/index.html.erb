@@ -20,12 +20,7 @@
             <div class="caption">
               <h4><b><%= trip.county + " - " + trip.location %></b></h4>
                <h5> <b> From: <%= trip.start_date %> To:  <%= trip.end_date %></b> </h5>
-                <% num = trip.boots || 0 %>
-
-                 <% until num == 0 do %>
-                    <% num -=1 %>
-                     <%=  image_tag("boot.jpg", :alt=>"boot")  %>
-              <%end%><br></br>
+                <br></br>
                 <p class="btn btn-primary"> <%= link_to 'View More', trip %> </p>
                  <p class="btn btn-primary"> <%= link_to 'Sign Up', trip %> </p>
           </div> <!-- caption -->
@@ -39,5 +34,6 @@
  
   <% end %>
   </div>
+</div>
 </div>
  

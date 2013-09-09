@@ -48,18 +48,7 @@ bottom:5px;
 background-color: green;
 float:center;
 }
-.landing{
- width:100%;
-margin-top: -20px;
-  height: 600px;
-  
-  background-repeat: no-repeat no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
+
 .lanfloat{
   width:100%;
   margin-top:-500px;
@@ -89,3 +78,10 @@ h6{
   width:300px;
 }
 
+.field{
+  font-size: 14px;
+}
+
+.jumbotron{
+  background-color: #9DE890;
+}
