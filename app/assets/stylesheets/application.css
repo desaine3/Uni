@@ -80,6 +80,13 @@ h6{
 
 .field{
   font-size: 14px;
+  margin-left: 20px;
+}
+
+.form_table{
+  border-style: double;
+  width:40%;
+
 }
 
 .jumbotron{
