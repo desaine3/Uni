@@ -48,7 +48,6 @@ bottom:5px;
 background-color: green;
 float:center;
 }
-
 .landing{
  width:100%;
 margin-top: -20px;
@@ -84,11 +83,4 @@ h6{
     margin-right: 40%;
     margin-top: 7px;
 }
-
-.table-striped{
-  margin: 50px;
-  width:100%;
-  float:left;
-}
-
 

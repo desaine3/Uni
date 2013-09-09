@@ -9,8 +9,13 @@
                         <img class="media-object" ><%=  image_tag  @trip.picture_url  %></img>
         </a>
     <div class="media-body">
-      <h3 class="media-heading">
+      <h4 class="media-heading">
         <b>From <%= @trip.start_date %> To <%= @trip.end_date %> </br>
+          Trip Difficulty:  <% num = @trip.boots %>
+                 <%= until num == 0 do %>
+                    <% num -=1 %>
+                     <%=  image_tag("boot.jpg", :akt=>"boot")  %>
+              <%end%></br>
           Cost = £<%= @trip.cost %></b></h3>
       <h4><%= @trip.description %></h4>
       
