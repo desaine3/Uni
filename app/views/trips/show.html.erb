@@ -13,7 +13,7 @@
         <b>From <%= @trip.start_date %> To <%= @trip.end_date %> </br>
           Trip Difficulty: 
 
-        <% num = trip.boots || 0 %>
+        <% num = @trip.boots || 0 %>
 
                  <% until num == 0 do %>
                     <% num -=1 %>
