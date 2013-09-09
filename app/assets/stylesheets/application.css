@@ -52,7 +52,7 @@ float:center;
  width:100%;
 margin-top: -20px;
   height: 600px;
-  background: url('assets/images/exsoc.jpg');
+  background: url('exsoc.jpg');
   background-repeat: no-repeat no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -82,5 +82,10 @@ h6{
     float:right;
     margin-right: 40%;
     margin-top: 7px;
+}
+
+.media-object{
+  height: 250px;
+  width:300px;
 }
 
