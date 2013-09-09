@@ -20,8 +20,10 @@
             <div class="caption">
               <h4><b><%= trip.county + " - " + trip.location %></b></h4>
                <h5> <b><%= trip.leaders %> <br> From: <%= trip.start_date %> To:  <%= trip.end_date %></b> </h5>
-                <p><%= link_to 'Edit', edit_trip_path(trip) %></p>
-                <p class="btn btn-primary"> <%= link_to "View More", trips_path %> </p>
+              
+                
+                 
+                <p class="btn btn-primary"> <%= link_to 'View More', trip %> </p>
           </div> <!-- caption -->
         </div> <!-- thumbnail -->
       </div><!-- column -->

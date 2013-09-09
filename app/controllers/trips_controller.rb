@@ -7,10 +7,6 @@ class TripsController < ApplicationController
     @trips = Trip.all
   end
 
-  def individual
-    @trips = Trip.all
-  end
-
   # GET /trips/1
   # GET /trips/1.json
   def show

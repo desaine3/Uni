@@ -1,17 +1,12 @@
 ExSocProject::Application.routes.draw do
   get "static_pages/welcome"
   resources :trips
-  resources :posts do
-    member do
-      get 'individual'
-    end
-  end
   
   root "static_pages#welcome"
   
 
   # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  # See how all your sroutes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
