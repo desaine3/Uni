@@ -3,7 +3,3 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
- $("#fade").click(function(){
-       $("enter_site").fadeOut(400);
-    });
-   
