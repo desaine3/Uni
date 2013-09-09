@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130903131856) do
+ActiveRecord::Schema.define(version: 20130909113830) do
 
   create_table "trips", force: true do |t|
     t.string   "leaders"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20130903131856) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "picture_url"
+    t.integer  "boots"
   end
 
 end
