@@ -21,7 +21,7 @@
               <h4><b><%= trip.county + " - " + trip.location %></b></h4>
                <h5> <b> From: <%= trip.start_date %> To:  <%= trip.end_date %></b> </h5>
                 <% num = trip.boots %>
-                 <%= until num == 0 do %>
+                 <% until num == 0 do %>
                     <% num -=1 %>
                      <%=  image_tag("boot.jpg", :alt=>"boot")  %>
               <%end%><br></br>
