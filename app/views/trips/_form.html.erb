@@ -26,12 +26,13 @@
     <%= f.text_field :location %>
   </div>
   <div class="field">
-    <%= f.label :start_date %><br>
-    <%= f.date_select :start_date %>
+    <%= f.label :start_date, {:order=>[:day, :month, :year]} %><br>
+    <%= f.date_select :start_date, {:order=>[:day, :month, :year]} %>
+ 
   </div>
   <div class="field">
-    <%= f.label :end_date %><br>
-    <%= f.date_select :end_date %>
+    <%= f.label :end_date, {:order=>[:day, :month, :year]}%><br>
+    <%= f.date_select :end_date, {:order=>[:day, :month, :year]}%>
   </div>
   <div class="field">
     <%= f.label :cost %><br>
